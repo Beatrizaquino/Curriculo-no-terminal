@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-lucasbustamante.com.br
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,14 +10,32 @@ lucasbustamante.com.br
 body{
   background: #ecd6c4;
   margin:50px 300px 50px 300px;
-  font-family: Ubuntu;
+  font-family: Courier;
 }
 .top{
   text-align: center;
-  font-family: Ubuntu;
+  font-family: Courier;
   padding: 20px;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 35px;
+  color: #615347;
+}
+.top::after {
+  content: "|";
+  margin-left: 5px;
+  animation: blink .7s infinite;
+}
+
+@keyframes blink {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;  }
+
 }
 
 .menu{
@@ -75,12 +93,12 @@ main{
 .topic-header{
   color: #7CFC11;
   margin-top: 2%;
-  font-family: Ubuntu;
+  font-family: Courier;
 }
 
 .body-text{
   color:white;
-  font-family: Ubuntu;
+  font-family: Courier;
   margin-left:5%;
 
 }
@@ -89,7 +107,7 @@ main{
 
 button{
   color:white;
-  font-family: Ubuntu;
+  font-family: Courier;
   margin-left:5%;
   background: none;
   border:none;
@@ -159,12 +177,13 @@ a:hover {
 
 .email{
   display: none;
+  font-family: Courier;
 }
 
 input:checked + .body-text p{
   display: block;
   color:white;
-  font-family: Ubuntu;
+  font-family: Courier;
   font-size: 15px;
 
 }
